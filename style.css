@@ -1,0 +1,14 @@
+/* Custom styles for Animals World site */
+body {
+    background-color: #f1f8e9;
+}
+
+.hero {
+    background: linear-gradient(135deg, #689f38 0%, #8bc34a 100%);
+    color: white;
+    padding: 100px 0;
+}
+
+.fact-card {
+    margin-bottom: 20px;
+}
