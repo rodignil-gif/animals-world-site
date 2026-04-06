@@ -1,123 +1,126 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zvířata světa</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Mech a Popel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <div class="container">
-            <a class="navbar-brand" href="#">Zvířata světa</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Domů</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#facts">Fakty</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#animals">Zvířata</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#protection">Ochrana</a></li>
-                </ul>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">Mech a Popel</div>
+            <nav class="nav-links">
+                <a href="#about">O hře</a>
+                <a href="#mechanika">Mechanika</a>
+                <a href="#postavy">Postavy</a>
+                <a href="#bosse">Bosse</a>
+            </nav>
+        </header>
+
+        <section id="home" class="hero-section">
+            <div class="hero-bg">
+                <div class="hero-layer layer-back"></div>
+                <div class="hero-layer layer-mid"></div>
+                <div class="hero-layer layer-front"></div>
             </div>
-        </div>
-    </nav>
-
-    <section id="home" class="hero text-center">
-        <div class="container">
-            <h1 class="display-4">Zvířata světa</h1>
-            <p class="lead">Objevte úžasná stvoření přírody.</p>
-            <a href="#facts" class="btn btn-light btn-lg">Prozkoumat</a>
-        </div>
-    </section>
-
-    <div class="container my-5">
-        <section id="facts">
-            <h2>Zajímavé fakty</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card fact-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Slon</h5>
-                            <p class="card-text">Největší suchozemské zvíře s dlouhou pamětí.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card fact-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Koala</h5>
-                            <p class="card-text">Spí až 20 hodin denně a žije na eukalyptu.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card fact-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Tučňák</h5>
-                            <p class="card-text">Plave rychlostí 36 km/h a žije v Antarktidě.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card fact-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Velryba</h5>
-                            <p class="card-text">Zpívá písně pro komunikaci.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card fact-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Tygr</h5>
-                            <p class="card-text">Největší kočka s pruhy pro maskování.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card fact-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Delfín</h5>
-                            <p class="card-text">Inteligentní mořské savce s echolokací.</p>
-                        </div>
-                    </div>
+            <div class="hero-content">
+                <p class="eyebrow">Temná pohádka o znovuzrození</p>
+                <h1>Elira vstupuje do popela</h1>
+                <p class="subtitle">Roguelike platformer v ruinách lesa, kde každý běh mění stromy, nepřátele a osud.</p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#about">Připomenout si</a>
+                    <a class="btn secondary" href="#mechanika">Prozkoumat mechaniky</a>
                 </div>
             </div>
+            <div class="ash-clouds"></div>
         </section>
 
-        <section id="animals" class="my-5">
-            <h2>Různé zvířata</h2>
-            <ul class="list-group">
-                <li class="list-group-item">Savci</li>
-                <li class="list-group-item">Ptáci</li>
-                <li class="list-group-item">Plazi</li>
-                <li class="list-group-item">Ryby</li>
-            </ul>
-        </section>
+        <main>
+            <section id="about" class="section section-about reveal">
+                <div class="section-header">
+                    <span>O hře</span>
+                    <h2>Cesta k Srdci Kořenů</h2>
+                </div>
+                <div class="section-copy">
+                    <p>Po požáru začal starý les žít v cyklech popela a znovuzrození. Elira, mlčenlivá průvodkyně, musí vstřebat pepřná echa padlých strážců, najít průchod skrz zkorodované mosty a odhalit, kdo spustil věčný plamen.</p>
+                    <p>Každý běh vytváří nové herní cesty, odemyká jiné masky a proměňuje rozvržení ruin. Les není stejný dvakrát.</p>
+                </div>
+            </section>
 
-        <section id="protection">
-            <h2>Ochrana přírody</h2>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Snižte odpad.</li>
-                <li class="list-group-item">Podporujte rezervace.</li>
-                <li class="list-group-item">Nevyhýbejte se pytláctví.</li>
-                <li class="list-group-item">Vzdělávejte ostatní.</li>
-            </ul>
-            <p>Chraňte přírodu!</p>
-            <div class="alert alert-info">
-                <strong>Lokalizace:</strong> Informace v češtině. Pro více faktů navštivte zoo nebo knihy.
+            <section id="mechanika" class="section section-grid reveal">
+                <div class="section-header">
+                    <span>Mechanika</span>
+                    <h2>Roguelike ve fázích popela</h2>
+                </div>
+                <div class="grid-cards">
+                    <article class="card feature-card">
+                        <h3>Proměnlivý svět</h3>
+                        <p>Každý běh obnovuje ruiny lesa, otevírá nové cesty a vytváří nečekané pastí z uhlí.</p>
+                    </article>
+                    <article class="card feature-card">
+                        <h3>Absorpce echa</h3>
+                        <p>Elira sbírá „přepelné echa“ a získává schopnosti starých strážců pro další boj.</p>
+                    </article>
+                    <article class="card feature-card">
+                        <h3>Rychlý pohyb</h3>
+                        <p>Skákání, klouzání, stěnový odraz a sprint mezi zářícími mechy. Reflexy rozhodují.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="postavy" class="section section-characters reveal">
+                <div class="section-header">
+                    <span>Postavy</span>
+                    <h2>Strážci lesa a jejich stíny</h2>
+                </div>
+                <div class="cards-row">
+                    <article class="character-card">
+                        <h3>Elira</h3>
+                        <p>Hlavní hrdinka, obratná stopařka, která mluví především činy. Její cesta je tichá, ale její kroky mají důsledky.</p>
+                    </article>
+                    <article class="character-card">
+                        <h3>Varn</h3>
+                        <p>Duch-olše, průvodce mezi světlem a popelem. Pomáhá Elire nalézt správnou cestu v temných houštinách.</p>
+                    </article>
+                    <article class="character-card">
+                        <h3>Sovař</h3>
+                        <p>Slepý kovář masek, který vyrábí vylepšení a tajemné symboly pro další běh.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="bosse" class="section section-bosses reveal">
+                <div class="section-header">
+                    <span>Bosse</span>
+                    <h2>Tři hlavy popelného lesa</h2>
+                </div>
+                <div class="boss-grid">
+                    <article class="boss-card">
+                        <h3>Matka Popela</h3>
+                        <p>Výrazná esence ohně. Její útoky osvětlují tmavé stíny a lákají Eliru do pasti.</p>
+                    </article>
+                    <article class="boss-card">
+                        <h3>Zpěvný Kořen</h3>
+                        <p>Starý kořenový duch, který ovládá rytmus lesa a způsobuje zemětřesení v podzemních chodbách.</p>
+                    </article>
+                    <article class="boss-card">
+                        <h3>Král Dutých Parohů</h3>
+                        <p>Tajemný vládce listnaté říše. Ochránce starých rohů a poslední velká zkouška před Srdcem Kořenů.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div>
+                <p>Mech a Popel — původní česky vyprávěná indie hra.</p>
+                <p>Ve světě, kde se popel znovu rodí, tvoříš osud.</p>
             </div>
-        </section>
+            <div class="footer-note">Vytvořeno bez frameworku, jen HTML5/CSS/JavaScript.</div>
+        </footer>
     </div>
 
-    <footer class="bg-success text-white text-center py-3">
-        <p>&copy; 2026 Zvířata světa. Pro ochranu přírody.</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
